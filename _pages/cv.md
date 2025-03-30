@@ -8,7 +8,18 @@ redirect_from:
 ---
 
 {% include base_path %}
+(Last updated: March 2025)
+<iframe 
+  src="{{ base_path }}/files/Yiling_Yun_CV_academic.pdf" 
+  width="100%" 
+  height="800px" 
+  style="border: none; margin-top: 2em;">
+</iframe>
 
+I also wrote blog posts about [emotion](https://medium.com/@ucladsu/social-intelligence-emotion-prediction-in-videos-01f704a9bfbb) and [memory](https://www.psychologyinaction.org/remembering-history-the-personal-lens-of-collective-events/).
+
+
+<!-- 
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
@@ -61,4 +72,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
