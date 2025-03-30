@@ -12,10 +12,11 @@ WORKDIR /usr/src/app
 
 # Copy Gemfile into the container (necessary for `bundle install`)
 COPY Gemfile ./
+COPY . .
 
 # Install bundler and dependencies
-RUN gem install bundler:2.3.26 && bundle install
+RUN gem install bundler:2.3.26 jekyll && bundle install --jobs=1
 
 # Command to serve the Jekyll site
-CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
+CMD ["bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
 
